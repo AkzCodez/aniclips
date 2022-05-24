@@ -8,7 +8,7 @@ const { engine } = require('express-handlebars');
 
 //Sets our app to use the handlebars engine
 app.set('view engine', 'handlebars');
-
+//a silly change
 
 //Sets handlebars configurations (we will go through them later on)
 app.engine('handlebars', engine({
