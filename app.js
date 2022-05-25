@@ -84,7 +84,7 @@ app.get('/signup', (req, res) => {
             loggedin: req.session.loggedin
         });    
     }
-    
+
     res.render('signup', {layout: 'index',loggedin: req.session.loggedin
 });
 });
@@ -187,7 +187,7 @@ app.post('/signup', jsonParser, async (req, res) => {
     }
 })
 
-app.post('/login', jsonParser, async (req, res) => {
+app.post('/login', jsonParser, async (req, res) => {    
     try {
 
         console.log(req.body )
