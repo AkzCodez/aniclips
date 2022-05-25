@@ -1,11 +1,12 @@
-
-
+html,
 body {
-    background-color: rgb(255, 255, 255);
-  }
+  height: 100%;
+  margin: 0;
+  background-color: rgb(255, 255, 255);
 
+}
 
-  * {
+* {
     box-sizing: border-box;
     font-family: -apple-system, BlinkMacSystemFont, "segoe ui", roboto, oxygen, ubuntu, cantarell, "fira sans", "droid sans", "helvetica neue", Arial, sans-serif;
     font-size: 16px;
@@ -57,18 +58,13 @@ body {
     color: #ffffff;
     transition: background-color 0.2s;
 }
+
 .login form input[type="submit"]:hover {
   background-color: #2868c7;
     transition: background-color 0.2s;
 }
 
-.main-body {
-    border:1px solid black;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
 
-}
 
 ul {
     list-style-type: none;
@@ -98,3 +94,38 @@ ul {
     margin-right: 0;
 
   }
+
+
+  .box {
+    display: flex;
+    flex-flow: column;
+    height: 100%;
+  }
+  
+  
+  .box .row.header {
+    flex: 0 1 auto;
+  }
+  
+  .box .row.content {
+    flex: 1 1 auto;
+    
+  }
+
+
+  .box .row.content .search {
+    margin: auto;
+    position:relative;
+    top: 35%;
+    text-align: center;
+
+  }
+
+
+
+  .box .row.footer {
+    flex: 0 1 40px;
+    background-color: #333;
+    color: white;
+  }
+  
