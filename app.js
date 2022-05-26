@@ -24,6 +24,7 @@ app.engine('handlebars', engine({
 layoutsDir: __dirname + '/views/layouts',
 }));
 
+
 app.use(session({
     name: 'sid',
     resave: false,
